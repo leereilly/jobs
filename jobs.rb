@@ -18,13 +18,13 @@ def get_github_jobs()
 end
 
 def generate_readme
-  markdown = "= JOBS\n"
+  markdown = "# JOBS\n"
   github_jobs = get_github_jobs  
   markdown << "<table>"
   github_jobs.each do |job|
   markdown << "<tr><td>#{job['company']}</td><td>#{job['title']}</td></tr>\n"
   end
-  markdown << "/<table>"
+  markdown << "<table>"
   return markdown
 end
 

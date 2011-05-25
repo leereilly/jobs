@@ -1,4 +1,4 @@
-= JOBS
+# JOBS
 <table><tr><td>Yelp Inc.</td><td>Yelp is hiring a MySQL Database Administrator!</td></tr>
 <tr><td>Yelp Inc.</td><td>Yelp is hiring a Back-End Software Engineer!</td></tr>
 <tr><td>Yelp Inc.</td><td>Yelp is hiring a Systems Infrastructure Developer!</td></tr>
@@ -50,4 +50,4 @@
 <tr><td>ROBLOX</td><td>Web Release & Automated Test Engineer - ROBLOX - Leading Online Game Developer</td></tr>
 <tr><td>ROBLOX</td><td>Physics Programmer - ROBLOX - Leading Online Game Developer </td></tr>
 <tr><td>ROBLOX</td><td>Web Developer - ROBLOX - Leading Online Social Game</td></tr>
-/<table>
+<table>
