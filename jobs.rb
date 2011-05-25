@@ -20,10 +20,12 @@ end
 def generate_readme
   markdown = "= JOBS\n"
   github_jobs = get_github_jobs  
+  markdown << "<table>"
   github_jobs.each do |job|
-  markdown << "#{job['company']} | #{job['title']}\n"
+  markdown << "<tr><td>#{job['company']}</td><td>#{job['title']}</td></tr>\n"
   end
+  markdown << "/<table>"
   return markdown
 end
 
-File.open('README', 'w') {|f| f.write(generate_readme) }
+File.open('README.md', 'w') {|f| f.write(generate_readme) }
