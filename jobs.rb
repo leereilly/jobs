@@ -24,7 +24,7 @@ def generate_readme
   markdown << "<table>"
   github_jobs.each do |job|
     job_id = job_id + 1
-    markdown << "<tr><td><img src='#{job['company_logo']}' width='25'></td><td>**<a title='Go to #{job['company_url']} homepage' href='#{job['company_url']}'>#{job['company']}</a>**</td><td><a id='#{job_id}' title='Go to #{job['title']} description' href='#{job['url']}'>#{job['title']}</a></td></tr>\n"
+    markdown << "<tr><td><img src='#{job['company_logo']}' height='30'></td><td>**<a title='Go to #{job['company_url']} homepage' href='#{job['company_url']}'>#{job['company']}</a>**</td><td><a id='#{job_id}' title='Go to #{job['title']} description' href='#{job['url']}'>#{job['title']}</a></td></tr>\n"
   end
   markdown << "<table>"
   return markdown
