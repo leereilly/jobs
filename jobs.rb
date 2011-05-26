@@ -6,7 +6,7 @@ require 'json'
 KEYWORDS = ""
 LOCATION = "san+francisco"
 
-BASE_GITHUB_URL = "http://jobs.github.com/positions.json?description=#{KEYWORDS}&location=#{LOCATION}"
+BASE_GITHUB_URL = "http://jobs.github.com/positions.json?description=#{KEYWORDS}&location=#{LOCATION}&markdown=true"
 
 def get_github_jobs()
   response = Net::HTTP.get_response(URI.parse(BASE_GITHUB_URL))
